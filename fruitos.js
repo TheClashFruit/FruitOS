@@ -9,13 +9,14 @@ const rl = readline.createInterface({
 });
 
 let user = os.userInfo().username;
+let hostname = os.hostname();
 let currentDir = '/home/' + os.userInfo().username;
 
 console.log('FruitOS v0.69.1\nBuild 6f970b');
 ask();
 
 function ask() {
-  rl.question(user + '@localhost ' + currentDir + ' $ ', (answer) => {
+  rl.question(user + '@' + hostname + ' ' + currentDir + ' $ ', (answer) => {
     if(answer == 'help') {
       console.log('* ls - List Files.');
     } else if(answer == 'ls') {
