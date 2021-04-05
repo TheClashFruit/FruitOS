@@ -34,6 +34,15 @@ function ask() {
       console.log(args.join(' '));
     } else if(answer == 'clear') {
       console.clear();
+    } else if(answer == 'lmao') {
+      console.log('  _                        \n' +
+      '| |                      \n' +
+      '| |_ __ ___   __ _  ___  \n' +
+      '| | \'_ ` _ \\ / _\` |/ _ \\ \n' +
+      '| | | | | | | (_| | (_) |\n' +
+      '|_|_| |_| |_|\\__,_|\\___/ \n' +
+      ' \n'+
+      '                         ');
     } else {
       console.log('Invalid command.')
     }
